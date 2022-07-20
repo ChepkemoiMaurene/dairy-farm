@@ -1,3 +1,6 @@
+let buyingPrice = 45
+let dailyTotal = 0
+
 function totalProduction(){
     var shedATotal = document.getElementsByName("shedATotal")[0].value;
     var shedBTotal = document.getElementsByName("shedBTotal")[0].value;
@@ -19,10 +22,49 @@ function totalProduction(){
     
     totalShedProduction='you production of all the shed is'+''+total+''+ 'per day';
 
-    document.getElementsByID("total-production")[0].innerHTML=totalShedProduction;
+    document.getElementsByClassName("total-production")[0].innerHTML=totalShedProduction;
 
+    console.log('your production for shed A is'+" "+shedATotal*7+" "+ 'per week')
+    var weeklyShedAProduction='your production for shed A is'+" "+shedATotal *7+" "+ 'per week';
+    var weeklyShedBProduction='your production for shed B is'+' '+shedBTotal *7+' '+ 'per week';
+    var weeklyShedCProduction='your production for shed C is'+' '+shedCTotal *7+' '+ 'per week';
+    var weeklyShedDProduction='your production for shed D is'+' '+shedDTotal *7+' '+ 'per week';
+    var weeklyTotalShedProduction='you production of all the shed is'+' '+total *7+' '+ 'per day'
+
+    document.getElementsByClassName("weekly-shedA-production")[0].innerHTML=weeklyShedAProduction;
+    document.getElementsByClassName("weekly-shedB-production")[0].innerHTML=weeklyShedBProduction;
+    document.getElementsByClassName("weekly-shedC-production")[0].innerHTML=weeklyShedCProduction;
+    document.getElementsByClassName("weekly-shedD-production")[0].innerHTML=weeklyShedDProduction;
+    document.getElementsByClassName("weekly-total-production")[0].innerHTML=weeklyTotalShedProduction;
+    dailyTotal = total
+
+    incomeOverTime(buyingPrice)
+    leapYear(buyingPrice)
 }
 totalProduction();
-*45
+function incomeOverTime(buyingPrice){
 
-let milk = (100 + 50) * 45;
+    let weeklyIncome = dailyTotal * 7 * buyingPrice
+    let yearlyIncome = dailyTotal * 366 * buyingPrice
+
+    document.querySelector(".weekly").textContent = weeklyIncome 
+    document.querySelector(".yearly").textContent = yearlyIncome
+}
+incomeOverTime(buyingPrice)
+
+function leapYear(buyingPrice){
+    let dailyIncome = dailyTotal * buyingPrice
+    document.querySelector(".jan").textContent = dailyIncome *31
+    document.querySelector(".feb").textContent = dailyIncome *29
+    document.querySelector(".mar").textContent = dailyIncome *31
+    document.querySelector(".apr").textContent = dailyIncome *30
+    document.querySelector(".may").textContent = dailyIncome *31
+    document.querySelector(".jun").textContent = dailyIncome *30
+    document.querySelector(".jul").textContent = dailyIncome *31
+    document.querySelector(".aug").textContent = dailyIncome *31
+    document.querySelector(".sept").textContent = dailyIncome *30
+    document.querySelector(".oct").textContent = dailyIncome *31
+    document.querySelector(".nov").textContent = dailyIncome *30
+    document.querySelector(".dec").textContent = dailyIncome *31
+
+}
