@@ -5,13 +5,13 @@ Portfolio
 By chepkemoi maurene
 
 Table of Content
-[Description](https://github.com/ChepkemoiMaurene/Dairy-Farm /edit/main/README.md#description)
-Installation Requirement(https://github.com/ChepkemoiMaurene/Dairy-Farm /edit/main/README.md#description)
-Technology Used(https://github.com/ChepkemoiMaurene/Dairy-Farm /edit/main/README.md#description)
-Reference(https://github.com/ChepkemoiMaurene/Dairy-Farm /edit/main/README.md#description)
-Licence(https://github.com/ChepkemoiMaurene/Dairy-Farm /edit/main/README.md#description)
-Authors Info(https://github.com/ChepkemoiMaurene/Dairy-Farm /edit/main/README.md#description)
-Description(https://github.com/ChepkemoiMaurene/Dairy-Farm /edit/main/README.md#description)
+[Description]
+Installation Requirement
+Technology Used
+Reference
+Licence
+Authors Info
+Description
 This application will prove useful to anyone who is looking to remotely monitor the proceeds of their dairy farm. The app provides information that is projected ahead of time. It also provides a good comparison of prices as they change. Once you fill in the form data about the produce you get per shed and submit, it will go ahead and do the calculations for you. The results are well articulated and onpoint. Once you are done, you can refresh the page by clicking on reset.
 
 Installation
